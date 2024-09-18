@@ -1,0 +1,115 @@
+#MOM-animerad1 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(82, 163, 136);
+    position: relative;
+    animation: flygande-block1 10s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flygande-block1 {
+    0%     {background-color: rgb(82, 163, 136); left: 0px; top: 0px;}
+    25%    {background-color: azure; left: 1442px; top: 0px;}
+    50%    {background-color: rgb(82, 163, 136); left: 1442px; top: 600px;}
+    75%    {background-color: azure; left: 0px; top: 600px;}
+    100%   {background-color: rgb(82, 163, 136); left: 0px; top: 0px;}
+}
+
+#MOM-animerad2 {
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+    position: relative;
+    left: 0px;
+    top: 530px;
+    animation: flygande-block2 10s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flygande-block2 {
+    0%     {background-color: azure; left: 0px; top: 530px;}
+    25%    {background-color: rgb(82, 163, 136); left: 0px; top: -85px;}
+    50%    {background-color: azure; left: 1442px; top: -85px;}
+    75%    {background-color: rgb(82, 163, 136); left: 1442px; top: 515px;}
+    100%   {background-color: azure; left: 0px; top: 530px;}
+}
+
+#MOM-animerad3 {
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+    position: relative;
+    left: 1442px;
+    top: -150px;
+    animation: flygande-block3 10s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flygande-block3 {
+    0%     {background-color: azure; left: 1442px; top: -150px;}
+    25%    {background-color: rgb(82, 163, 136); left: 1442px; top: 450px;}
+    50%    {background-color: azure; left: 0px; top: 450px;}
+    75%    {background-color: rgb(82, 163, 136); left: 0px; top: -150px;}
+    100%   {background-color: azure; left: 1442px; top: -150px;}
+}
+
+#MOM-animerad4 {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(82, 163, 136);
+    position: relative;
+    left: 1442px;
+    top: 360px;
+    animation: flygande-block4 10s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flygande-block4 {
+    0%     {background-color: rgb(82, 163, 136); left: 1442px; top: 360px;}
+    25%    {background-color: azure; left: 0px; top: 360px;}
+    50%    {background-color: rgb(82, 163, 136); left: 0px; top: -240px;}
+    75%    {background-color: azure; left: 1442px; top: -240px;}
+    100%   {background-color: rgb(82, 163, 136); left: 1442px; top: 360px;}
+}
+
+.sakgrund {
+    position: fixed;
+    inset: 0px;
+    width: 48rem;
+    height: 20rem;
+    margin: auto;
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    border: dotted black;
+    padding: 10px;
+}
+
+.sakgrund::-webkit-scrollbar {
+    display: none;
+}
+
+.bild1 {
+    width: 270px;
+    height: 400px;
+    position: absolute;
+    top: 21%;
+    right: 76%;
+    border: ridge black;
+    border-radius: 5px;
+}
+.tillbakaknapp {
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(82, 163, 136);
+    font-size: larger;
+    position: absolute;top: 78%;
+    border: none;
+    position: absolute;right: 50%;
+    transition: 0.5s;
+}
+.tillbakaknapp:hover {
+     background-color: white;
+     color: rgb(82, 163, 136);
+}
